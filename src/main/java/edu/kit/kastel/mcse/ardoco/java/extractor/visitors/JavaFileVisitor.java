@@ -1,5 +1,5 @@
 /* Licensed under MIT 2022-2023. */
-package edu.kit.kastel.mcse.ardoco.core.models.java.extractor.visitors;
+package edu.kit.kastel.mcse.ardoco.java.extractor.visitors;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

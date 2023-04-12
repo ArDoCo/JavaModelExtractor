@@ -1,5 +1,5 @@
 /* Licensed under MIT 2022-2023. */
-package edu.kit.kastel.mcse.ardoco.core.models.java.extractor;
+package edu.kit.kastel.mcse.ardoco.java.extractor;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import edu.kit.kastel.mcse.ardoco.core.common.JsonUtils;
 import edu.kit.kastel.mcse.ardoco.core.models.java.JavaProject;
-import edu.kit.kastel.mcse.ardoco.core.models.java.extractor.visitors.JavaFileVisitor;
+import edu.kit.kastel.mcse.ardoco.java.extractor.visitors.JavaFileVisitor;
 
 /**
  * This class provides a CLI to extract a Java Code Model from Java Projects.

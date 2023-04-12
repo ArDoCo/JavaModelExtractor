@@ -7,33 +7,18 @@
     <version>0.8.0-SNAPSHOT</version>
   </parent>
 
+  <groupId>io.github.ardoco</groupId>
   <artifactId>java-model-extractor</artifactId>
+  <version>0.8.0-SNAPSHOT</version>
   <name>Java Code Model Extractor</name>
-  
-    <repositories>
-    <repository>
-      <id>mavenCentral</id>
-      <url>https://repo1.maven.org/maven2/</url>
-    </repository>
-    <repository>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>mavenSnapshot</id>
-      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-    </repository>
-  </repositories>
-  
+
   <properties>
-	<sonar.projectKey>ArDoCo_JavaModelExtractor</sonar.projectKey>
+    <sonar.projectKey>ArDoCo_JavaModelExtractor</sonar.projectKey>
     <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
     <sonar.organization>ardoco</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
-  
+
   <dependencies>
     <dependency>
       <groupId>com.github.javaparser</groupId>
@@ -62,6 +47,23 @@
       <artifactId>slf4j-simple</artifactId>
     </dependency>
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>mavenCentral</id>
+      <url>https://repo1.maven.org/maven2/</url>
+    </repository>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>mavenSnapshot</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+    </repository>
+  </repositories>
   <build>
     <plugins>
       <plugin>
@@ -74,7 +76,7 @@
               <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
               <addClasspath>true</addClasspath>
-              <mainClass>edu.kit.kastel.mcse.ardoco.core.models.java.extractor.JavaCodeModelExtractor</mainClass>
+              <mainClass>edu.kit.kastel.mcse.ardoco.java.extractor.JavaCodeModelExtractor</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

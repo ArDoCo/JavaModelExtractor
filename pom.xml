@@ -9,7 +9,7 @@
 
   <groupId>io.github.ardoco</groupId>
   <artifactId>java-model-extractor</artifactId>
-  <version>0.8.1-SNAPSHOT</version>
+  <version>0.8.1</version>
   <name>Java Code Model Extractor</name>
 
   <properties>
@@ -95,4 +95,8 @@
       </plugin>
     </plugins>
   </build>
+
+  <scm>
+    <tag>v0.8.1</tag>
+  </scm>
 </project>
